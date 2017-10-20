@@ -1,0 +1,16 @@
+<script> 
+function dB(){
+	<?php
+
+		$run = mysql_connect("localhost","root","") or die(mysql_errno());
+
+		mysql_select_db("run", $run);
+
+		$sql = "INSERT INTO score(Name, Score) VALUES('Tivutan',2)";
+
+		mysql_query($sql, $run);
+
+	?>
+}
+
+</script>
